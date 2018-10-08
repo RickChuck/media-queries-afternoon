@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+    background-image: url(./old_header_bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover; 
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    color: #fff;
+ 
+}
+
+main {
+    height: calc(100vh - 100px); 
+}
+
+#logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+
+h2 {
+     font-size: 40px;
+     font-style: italic;
+     line-height: 40px;
+     margin-bottom: 40px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+
+  #hamburger {
+    width: 40px;
+  }
+
+  h1 {
+      display: flex;
+      float: left;
+      font-size: 30px;
+      padding: 10px;
+      color: #fed136;
+      font-family: cursive;
+      margin: 20px;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding: 20px;
+    color: #fed136;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  li{
+      margin: 20px;
+  }
+  
+  
+  @media(min-width: 900px) {
+    header {
+      align-items: center;
+    }
+    nav {
+      height: 30px;
+      width: 50vw;
+    }
+    nav:hover {
+      height: 30px;
+    }
+    #hamburger {
+      display: none;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  
